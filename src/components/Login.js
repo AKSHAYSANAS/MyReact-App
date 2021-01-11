@@ -20,15 +20,15 @@ function Login(props) {
         
         event.preventDefault()
         if (!username.trim()) {
-            setNameError("Username cannot be empty")
+            setNameError("Username cannot be empty!")
             return false
         }
         if (!pass.trim()) {
-            setPassError("Password cannot be empty")
+            setPassError("Password cannot be empty!")
             return false
         }
         if(Number(username)){
-            setNameError("Username must contain only alphabets")
+            setNameError("Username must contain only alphabets!")
             return false;
         }
         if(username.length < 4 || pass.length < 4){
