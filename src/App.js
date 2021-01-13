@@ -16,6 +16,7 @@ import 'bootstrap-css-only/css/bootstrap.min.css';
 import 'mdbreact/dist/css/mdb.css';
 import { Provider } from "react-redux"
 import store from "./redux/store"
+import StaticPage from './components/StaticPage';
 
 toast.configure()
 Modal.setAppElement("#root")
@@ -26,7 +27,7 @@ function App() {
       <Router>
         <div className="App">
           <Switch>
-            <Route path="/" exact component={Login} />
+            <Route path="/" exact component={StaticPage} />
             <Route path="/navbar" component={NavBar} />
             <Route path="/notifications" component={Notifications} />
             <Route path="/fillInfo" component={FillInfo} />
