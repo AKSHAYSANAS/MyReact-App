@@ -27,7 +27,7 @@ function App() {
       <Router>
         <div className="App">
           <Switch>
-            <Route path="/" exact component={StaticPage} />
+            <Route path="/" exact component={Login} />
             <Route path="/navbar" component={NavBar} />
             <Route path="/notifications" component={Notifications} />
             <Route path="/fillInfo" component={FillInfo} />
